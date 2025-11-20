@@ -1,0 +1,213 @@
+reservaciones.css:
+
+:root {
+    --color-principal: #a0522d;   
+    --color-secundario: #8b4513;  
+    --color-fondo: #fff8f0;      
+    --color-claro: #f8ede3;      
+    --color-texto: #4b2e05;      
+    --color-acento: #d2b48c;     
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: var(--color-secundario);
+    transform: scale(1.05);
+}
+
+.bienvenida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.bienvenida h2 {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    color: var(--color-principal);
+}
+
+.bienvenida p {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    max-width: 650px;
+    line-height: 1.6;
+}
+
+.contenedor-botones {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-volver {
+    padding: 12px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: var(--color-principal);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-volver:hover {
+    transform: scale(1.05);
+    background-color: var(--color-secundario);
+}
+
+.reservaciones {
+    background-color: var(--color-claro);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.reservaciones h2 {
+    color: var(--color-secundario);
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.reservaciones p {
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.form-reserva {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.form-reserva input,
+.form-reserva textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.form-reserva input:focus,
+.form-reserva textarea:focus {
+    border-color: var(--color-acento);
+    outline: none;
+    box-shadow: 0 0 5px rgba(160,82,45,0.3);
+}
+
+.form-reserva button {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-reserva button:hover {
+    background-color: var(--color-secundario);
+    transform: scale(1.05);
+}
+
+.redes-sociales {
+    background-color: var(--color-acento);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.redes-sociales h3 {
+    color: var(--color-texto);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.redes-sociales a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.redes-sociales a:hover {
+    color: var(--color-principal);
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: var(--color-principal);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ffd9b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
