@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida - Café Aroma</title>
+    <link rel="stylesheet" href="productosc.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a0522d;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .bienvenida {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .bienvenida h2 {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        .bienvenida p {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 15px 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+            max-width: 600px;
+        }
+
+        .contenedor-botones {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .contenedor-botones .btn-volver {
+            padding: 12px 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            background-color: #a0522d;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .contenedor-botones .btn-volver:hover {
+            transform: scale(1.05);
+            background-color: #8b4513;
+        }
+
+        /* ======= SECCIÓN RESERVACIONES ======= */
+        .reservaciones {
+            background-color: #f8ede3;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .reservaciones h2 {
+            color: #5a2d0c;
+            margin-bottom: 20px;
+        }
+
+        .form-reserva {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .form-reserva input, .form-reserva textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .form-reserva button {
+            background-color: #a0522d;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .form-reserva button:hover {
+            background-color: #8b4513;
+        }
+
+        /* ======= REDES SOCIALES ======= */
+        .redes-sociales {
+            background-color: #f1e0d6;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .redes-sociales h3 {
+            color: #5a2d0c;
+            margin-bottom: 15px;
+        }
+
+        .redes-sociales a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #a0522d;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .redes-sociales a:hover {
+            color: #8b4513;
+        }
+
+        footer {
+            background-color: #a0522d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer a {
+            color: #ffd9b3;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Café Aroma</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productosc.html">Productos</a></li>
+                <li><a href="descuentos.html">Descuentos</a></li>
+                <li><a href="nosotross.html">Nosotros</a></li>
+                <li><a href="reservaciones.html">Reservaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="bienvenida">
+        <h2>¡Bienvenidos a Café Aroma!</h2>
+        <p>Disfruta de los mejores cafés, preparados con pasión y dedicación. Cada taza está hecha pensando en ti.</p>
+        <p>Navega por nuestra página para conocer nuestros productos, promociones y descubrir todo lo que tenemos para ofrecerte. A continuación se mostrará un menú debajo de este texto que te dirigirá a otros apartados de nuestro sitio web.</p>
+
+        <div class="contenedor-botones">
+            <a href="productosc.html" class="btn-volver">☕ Ver Productos</a>
+            <a href="descuentos.html" class="btn-volver">💰 Ver Descuentos</a>
+            <a href="nosotross.html" class="btn-volver">📍 Nosotros</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE RESERVACIONES -->
+    <section class="reservaciones" id="reservaciones">
+        <h2>📅 Realiza tu Reservación</h2>
+        <p>Completa el siguiente formulario y asegura tu mesa con nosotros. ¡Te esperamos!</p>
+
+        <form class="form-reserva" action="enviar_reserva.php" method="post">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="tel" name="telefono" placeholder="Teléfono de contacto" required>
+            <input type="date" name="fecha" required>
+            <input type="time" name="hora" required>
+            <textarea name="mensaje" rows="4" placeholder="Mensaje o solicitud especial"></textarea>
+            <button type="submit">Reservar Ahora</button>
+        </form>
+    </section>
+
+    <!-- REDES SOCIALES -->
+    <section class="redes-sociales">
+        <h3>Síguenos en nuestras redes</h3>
+        <a href="https://wa.me/521234567890" target="_blank">📱 WhatsApp</a>
+        <a href="https://www.facebook.com/CafeAroma" target="_blank">📘 Facebook</a>
+        <a href="https://www.instagram.com/CafeAroma" target="_blank">📸 Instagram</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Café Aroma | <a href="index.html">Inicio</a></p>
+    </footer>
+</body>
+</html>
